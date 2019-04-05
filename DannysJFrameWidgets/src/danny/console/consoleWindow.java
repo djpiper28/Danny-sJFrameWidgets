@@ -146,6 +146,12 @@ public class consoleWindow {
 		return out;		
 	}
 	
+	public consoleWindow(/*Use defaults*/) {
+		new consoleWindow("Console", defaultTextColor, defaultBackgroundColor, 
+				defaultForegroundColor, new Dimension(900, 900), true, JFrame.EXIT_ON_CLOSE,
+				defaultFontSize, defaultFont);
+	}
+	
 	public consoleWindow(String name, Color TextColour,	Color BackGroundColour, 
 			Color BackGroundColourTextArea, Dimension size, boolean Resizeable,
 			int closeOperation, int fontSize, String fontName) {
@@ -184,7 +190,7 @@ public class consoleWindow {
 		this.log.setForeground(TextColour);
 		this.log.setSize(size.width, size.height-75);
 		this.log.setFont(new Font(fontName, Font.BOLD,fontSize));
-		this.log.setText("Console widget loaded.\n(c) 2019 github.com/djpiper28 \n");
+		this.log.setText("Console widget loaded.\n(c) 2019 github.com/djpiper28/Danny-sJFrameWidgets \n");
 		this.log.setCaretColor(TextColour);
 		this.log.setEditable(false);
 		this.log.setWrapStyleWord(true);
@@ -215,7 +221,9 @@ public class consoleWindow {
 		this.input.setMaximumSize(new Dimension(size.width, fontSize*3));
 		this.input.setWrapStyleWord(true);
 		this.input.setAutoscrolls(true);
-		this.input.addKeyListener(this.er);				
+		this.input.addKeyListener(this.er);	
+		this.input.createToolTip();
+		this.input.setToolTipText("Click here and type your input then hit enter.");
 		
 		for(Component c:this.jframe.getComponents()) {
 			c.setVisible(true);

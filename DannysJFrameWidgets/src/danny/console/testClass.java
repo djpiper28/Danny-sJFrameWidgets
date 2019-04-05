@@ -18,7 +18,9 @@ public class testClass {
 	public static void main(String[] args) {
 		consoleWindow c = new consoleWindow("Test Window",new Color(255,255,255)
 				, new Color(0 ,0, 0), new Color(20,20,20), new Dimension(900,900)
-				, true, JFrame.EXIT_ON_CLOSE, 18, "Courier");
+				, true, JFrame.EXIT_ON_CLOSE, 18, "Comic Sans MS");
+		consoleWindow b = new consoleWindow();
+		b.println("TEST of two consoles and the default console method");
 		
 		c.setInputText(">/");
 		
