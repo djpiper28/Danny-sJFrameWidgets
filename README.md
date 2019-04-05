@@ -2,13 +2,18 @@
 Well I say widgets...
 
 This currently contains:
+
     A customisable, working and neat console widget that can as a JFrame or as a JPanel and has input and output sorted.        
             I should document it but the code should suffice for now.
             
+	    
 How to use:
-    1. Download the latest jar file from release if the compilance level of your project is 1.8 OR compile it yourself.
-    2. Add it as a library. Don't know how? Google it or use your favourite search engine.
-    3. Create an object for the widget you want:
+
+   	  1. Download the latest jar file from release if the compilance level of your project is 1.8 OR compile it yourself.
+    
+ 	  2. Add it as a library. Don't know how? Google it or use your favourite search engine.
+   
+ 	  3. Create an object for the widget you want:
     
     An example for the console widget:
        
