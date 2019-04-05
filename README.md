@@ -12,7 +12,8 @@ How to use:
     
     An example for the console widget:
        
-  ```  consoleWindow c = new consoleWindow("Test Window",new Color(255,255,255)
+  ``` 
+  consoleWindow c = new consoleWindow("Test Window",new Color(255,255,255)
 				, new Color(0 ,0, 0), new Color(20,20,20), new Dimension(900,900)
 				, true, JFrame.EXIT_ON_CLOSE, 18, "Courier");
   ```
