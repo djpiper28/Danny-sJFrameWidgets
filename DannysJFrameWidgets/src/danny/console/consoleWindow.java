@@ -147,9 +147,9 @@ public class consoleWindow {
 	}
 	
 	public consoleWindow(/*Use defaults*/) {
-		new consoleWindow("Console", defaultTextColor, defaultBackgroundColor, 
+		this("Console", defaultTextColor, defaultBackgroundColor, 
 				defaultForegroundColor, new Dimension(900, 900), true, JFrame.EXIT_ON_CLOSE,
-				defaultFontSize, defaultFont);
+				defaultFontSize, defaultFont);		
 	}
 	
 	public consoleWindow(String name, Color TextColour,	Color BackGroundColour, 

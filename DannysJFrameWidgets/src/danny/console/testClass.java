@@ -16,10 +16,12 @@ public class testClass {
 	}
 	
 	public static void main(String[] args) {
-		consoleWindow c = new consoleWindow("Test Window",new Color(255,255,255)
-				, new Color(0 ,0, 0), new Color(20,20,20), new Dimension(900,900)
-				, true, JFrame.EXIT_ON_CLOSE, 18, "Comic Sans MS");
+		consoleWindow c = new consoleWindow("Test Window",new Color(0,255,0)
+				, new Color(20 ,20, 0), new Color(255,20,20), new Dimension(900,900)
+				, true, JFrame.EXIT_ON_CLOSE, 48, "Comic Sans MS");
+		
 		consoleWindow b = new consoleWindow();
+		
 		b.println("TEST of two consoles and the default console method");
 		
 		c.setInputText(">/");
@@ -28,7 +30,14 @@ public class testClass {
 			c.println("Test "+i);
 		}
 
+		c.println("Hit enter (readln test)");
+		
 		c.readln();
+		
+		c.println("Go to the other window.");
+		b.println("Hit enter (readln test)");
+
+		b.readln();
 		
 		c.flush();
 		for(int i = 0; i<100; i++){
